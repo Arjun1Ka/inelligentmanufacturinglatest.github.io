@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intelligent Manufacturing</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Full Screen Image Section (Optional) -->
+<section class="full-screen-image"></section>
+
+<!-- Navigation Bar Section -->
+<header class="top-bar">
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="title-and-quote">
+    <h1>Intelligent Manufacturing</h1>
+    <p class="quote">"Innovating for a better tomorrow"</p>
+  </div>
+</header>
+
+<!-- Gallery Section -->
+<section class="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-container">
+    <img src="pictures/Screenshot 2024-01-07 030225.png" alt="Gallery image 1">
+    <img src="pictures/Screenshot 2024-01-07 031058.png" alt="Gallery image 2">
+    <img src="pictures/Screenshot 2024-01-07 031148.png" alt="Gallery image 3">
+    <!-- Add more images as needed -->
+  </div>
+</section>
+
+<!-- JavaScript for Navbar -->
+<script>
+  // JavaScript to toggle navigation bar visibility on scroll
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px"; // Adjust this value as per your design
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+<footer>
+  <p>&copy; 2024 Projects Overview. All rights reserved.</p>
+</footer>
+</body>
+</html>
