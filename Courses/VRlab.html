@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VR Lab</title>
+<style>
+  /* Resetting default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 60px; /* Adjust based on header height */
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #aaa;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .lab-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .lab {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .lab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .lab img {
+    width: 100%;
+    height: 150px; /* Fixed height for all lab images */
+    object-fit: cover;
+  }
+
+  .lab h2 {
+    padding: 10px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar and Title Section -->
+<header class="top-bar">
+  <nav id="navbar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+  <div class="title">
+    <h1>VR Lab</h1>
+  </div>
+</header>
+
+<!-- Lab Section -->
+<main class="lab-container">
+  <a href="../Files/implementing-virtual-reality-project-activities-for-enhancing-student-learning-experience-in-robotics-and-automation.pdf" class="lab" download="implementing-virtual-reality-project-activities-for-enhancing-student-learning-experience-in-robotics-and-automation">
+    <img src="../Pictures/VR1.png" alt="Lab 1">
+    <h2>Lab 1</h2>
+  </a>
+  <a href="lab2.html" class="lab">
+    <img src="../Pictures/VR2.png" alt="Lab 2">
+    <h2>Lab 2</h2>
+  </a>
+  <a href="lab3.html" class="lab">
+    <img src="../Pictures/VR3.png" alt="Lab 3">
+    <h2>Lab 3</h2>
+  </a>
+  <a href="lab4.html" class="lab">
+    <img src="../Pictures/VR4.png" alt="Lab 4">
+    <h2>Lab 4</h2>
+  </a>
+</main>
+
+<footer>
+  <p>© 2024 VR Lab. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
